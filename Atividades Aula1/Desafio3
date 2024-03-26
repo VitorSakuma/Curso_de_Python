@@ -1,0 +1,10 @@
+#Desafio3
+
+#Crie um algoritmo que leia um número e mostre o seu dobro,triplo e o seu quadrado.
+
+numero = int(input("digite um numero inteiro : "))
+dobro = numero *2
+triplo = numero *3
+quadrado = numero * numero
+
+print(f"o dobro é {dobro} O triplo {triplo} E o quadrado {quadrado}" )
