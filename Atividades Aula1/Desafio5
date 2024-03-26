@@ -5,4 +5,4 @@ carteira = float(input("digite quanto de dinheiro voce possui: "))
 dolar = 5
 valorDolar = carteira / dolar
 
-print(f"Com o dolar a 5 reais {valorDolar}")
+print(f"Com o dolar a 5 reais, voce tem {valorDolar}")
