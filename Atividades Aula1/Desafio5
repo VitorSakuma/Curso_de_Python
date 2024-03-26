@@ -1,0 +1,8 @@
+#Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostra quantos Dólares ela pode comprar.
+#Considere o dólar = R$ 5,00
+
+carteira = float(input("digite quanto de dinheiro voce possui: "))
+dolar = 5
+valorDolar = carteira / dolar
+
+print(f"Com o dolar a 5 reais {valorDolar}")
