@@ -2,6 +2,11 @@
 
 frase = "Curso de Programacao em Python, Professor Pedro Miho".upper()
 
-#Quantas vezes aparece a letra "A"
+contaCaracter = frase.count("A")
+InicioCaracter = frase.find("A")
+ultimoCaracter = frase.rfind("A")
 
+print(f"A letra A apareceu {contaCaracter} vezes")
+print(f"A letra A apareceu na {InicioCaracter +1} Posição")
+print(f"A letra A apareceu pela ultima vez na {ultimoCaracter +1} posição")
 
