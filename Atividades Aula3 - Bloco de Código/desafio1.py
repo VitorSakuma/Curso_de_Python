@@ -11,9 +11,9 @@ numeroComputador = random.randint(0,5)
 numeroIntero = int(input("Digite o Numero Inteiro: "))
 
 if numeroComputador == numeroIntero:
-    print("Você Acertou")
+    print(f"Você Acertou")
     
 else:
-    print("Voce Errou")
+    print(f"Voce Errou")
     print(f"Valor Escolhido {numeroComputador}")
     

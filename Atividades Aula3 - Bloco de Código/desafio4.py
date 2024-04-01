@@ -10,9 +10,9 @@
 #n2>n3 and n2>n1
 #n3>n2 and n3>n1
 
-numero1 = input("Digite um numero: ")
-numero2 = input("Digite um numero: ")
-numero3 = input("Digite um numero: ")
+numero1 = int(input("Digite um numero: "))
+numero2 = int(input("Digite um numero: "))
+numero3 = int(input("Digite um numero: "))
 
 # valida numero maior
 if (numero1 > numero2) and (numero1> numero3):
@@ -33,3 +33,5 @@ if (numero2 < numero3) and (numero2 < numero1):
     
 if (numero3 < numero2) and (numero3 < numero1):
     print(f"Para os numeros inseridos {numero1} , {numero2} e {numero3} o menor é {numero3}")
+    
+#CTRL D, seleciona as palavras iguais

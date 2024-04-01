@@ -5,7 +5,7 @@
 
 import random
 
-distancia1  = int(input("Digite uma velocidade: "))
+distancia1  = int(input(f"Digite uma velocidade: "))
 
 
 if distancia1 <= 200:    
@@ -14,4 +14,4 @@ if distancia1 <= 200:
 else:
     valor = distancia1*0.45
     print(f"Valor a ser cobrado é R$ {valor}")   
-    #print(f"velocidade superior a 80km/h, Multa de R$ {multa}")
+    

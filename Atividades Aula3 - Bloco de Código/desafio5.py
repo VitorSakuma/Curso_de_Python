@@ -18,10 +18,6 @@ ab = reta1 + reta2
 ac = reta1 + reta3
 bc = reta2 + reta3
 
-print(ab)
-print(ac)
-print(bc)
-
 
 if (ab>reta3) and (ac>reta2) and (bc>reta1):
     print("é um triangulo")
