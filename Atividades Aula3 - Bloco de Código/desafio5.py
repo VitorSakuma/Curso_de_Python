@@ -5,9 +5,9 @@
 
 
 
-reta1 = input("Digite um numero: ") #a
-reta2 = input("Digite um numero: ") #b
-reta3 = input("Digite um numero: ") #c
+reta1 = int(input("Digite um numero: ")) #a
+reta2 = int(input("Digite um numero: ")) #b
+reta3 = int(input("Digite um numero: ")) #c
 
 # Condições Necessárias:
 # a + b > c
@@ -17,6 +17,11 @@ reta3 = input("Digite um numero: ") #c
 ab = reta1 + reta2
 ac = reta1 + reta3
 bc = reta2 + reta3
+
+print(ab)
+print(ac)
+print(bc)
+
 
 if (ab>reta3) and (ac>reta2) and (bc>reta1):
     print("é um triangulo")
