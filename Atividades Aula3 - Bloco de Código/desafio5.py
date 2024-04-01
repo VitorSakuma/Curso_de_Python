@@ -20,6 +20,6 @@ bc = reta2 + reta3
 
 
 if (ab>reta3) and (ac>reta2) and (bc>reta1):
-    print("é um triangulo")
+    print(f"é um triangulo")
 else:
-    print("não é um triangulo")
+    print(f"não é um triangulo")
