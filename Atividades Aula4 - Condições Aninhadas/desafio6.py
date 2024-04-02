@@ -32,5 +32,6 @@ elif escolhaMaquina == "PAPEL" and escolhaUsuario == "TESOURA":
 elif escolhaMaquina == "PEDRA" and escolhaUsuario == "PAPEL":
     print(f"Voce escolheu {escolhaUsuario}, portanto voce venceu")
     
-
+else:
+    print("A opção esta incorreta")
  
