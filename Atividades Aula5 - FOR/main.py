@@ -7,3 +7,4 @@ for peca in range (inicio, fim, salto):
     print (peca)
 else:
     print("PECAS FORAM FINALIZAS ")
+    
