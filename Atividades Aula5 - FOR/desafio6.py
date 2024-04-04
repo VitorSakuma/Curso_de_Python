@@ -13,6 +13,6 @@ for elemento in range (primeiroTermo, ultimoTermo, razao):
 else:
     print("FIM")
 
-
+#Metodo para juntar os print
 #print("Vitor", end= "-")
 #print("Sakuma")
