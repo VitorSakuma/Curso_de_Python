@@ -7,4 +7,28 @@
 # (desconsiderando o 999).
 
 contador = 1
-valor = 999
+parada = 999
+soma = 0
+
+while True:
+    try:
+        jogador = int(input("Entre com um número: "))    
+        
+        if (type(jogador) == int):
+            if jogador == parada:
+                
+                print(f"Parabéns você acertou o código de parada do sistema '{parada}' na {contador}º tentativa.", end=" - ")        
+                break
+            else:
+                print("Tente novamente: ")
+                contador += 1
+                soma += jogador
+                continue 
+    except:
+        print("Favor entrar con um número inteiro.")
+        continue
+    
+print(f"A soma dos valores digitados foi {soma:.2f}")
+
+
+
