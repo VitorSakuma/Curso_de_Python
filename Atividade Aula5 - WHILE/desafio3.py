@@ -8,7 +8,7 @@
 
 numerosInteiros = []
 
-#valorUsuario = int(input("Digite um valor: "))
+valorUsuario = int(input("Digite um valor: "))
 
 continuar = input("DESEJA CONTINUAR [S/N]: ").upper()
 
@@ -16,9 +16,4 @@ while continuar == 'S':
     
      valorUsuario = int(input("Digite um valor: "))
     
-     numerosInteiros.append(valorUsuario)
     
-     continuar = (input("Se quiser continuar: ")).upper()
-else:
-     numerosInteiros = sorted(numerosInteiros)
-     print(f"A soma entre eles é {sum(numerosInteiros)}. O maior é {max(numerosInteiros)}, e o menor é o {min(numerosInteiros)}")
