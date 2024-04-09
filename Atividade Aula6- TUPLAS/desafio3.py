@@ -18,3 +18,6 @@ time = ("Amazonas FC" , "America MG" , "Avai" , "Botafogo SP" , "Brusque", "CRB"
 
 print(f"lista dos times brasileiros serie B: {time}")
 print(f)
+
+
+Silas Bastianelli Pinto
