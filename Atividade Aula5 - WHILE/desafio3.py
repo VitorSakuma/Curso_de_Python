@@ -6,14 +6,58 @@
 # deve perguntar ao usuário se ele quer ou não continuar a
 # digitar valores
 
-numerosInteiros = []
+contador = soma = numeroMaior = numeroMenor = 0
+media = 0.0
 
-valorUsuario = int(input("Digite um valor: "))
+def validaMaior(numero1, numero2):
+    if (numero1 > numero2): 
+        numeroMaior = numero1        
+    else:             
+        numeroMaior = numero2
+    return numeroMaior
+        
+                
+def validaMenor(numero1, numero2):
+    if (numero1 < numero2): 
+        numeroMenor = numero1        
+    else:             
+        numeroMenor = numero2 
+    
+    return numeroMenor
 
-continuar = input("DESEJA CONTINUAR [S/N]: ").upper()
+def calculaMedia(soma, contador):
+    return soma/contador
+    
+while True:
+    try: 
+        jogador = int(input("Entre com um número inteiro: "))   
+        
+        contador += 1
+          
+        if (type(jogador) == int): 
+            soma += jogador           
+            if contador == 1:                
+                numeroMaior = jogador
+                numeroMenor = jogador
+            else:
+                numeroMaior = validaMaior(jogador, numeroMaior)
+                numeroMenor = validaMenor(jogador, numeroMenor)                    
+            
+        continuar = input("Deseja continuar? [S/N]: ").upper()
+        
+        if continuar == "S":
+            continue
+        elif continuar == "N":
+            media = calculaMedia(soma,contador)
+            break
+        else:
+            print("Favor entrar con S ou N.")        
+        
+    except:
+        print("Favor entrar con um número inteiro.")
+        continue
 
-while continuar == 'S':
-    
-     valorUsuario = int(input("Digite um valor: "))
-    
-    
+
+print(f"A média entre todos os valores é: {media:.2f}")
+print(f"Numero maior digitado foi: {numeroMaior}")
+print(f"Numero menor digitado foi: {numeroMenor}")
