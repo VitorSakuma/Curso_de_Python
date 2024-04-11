@@ -29,3 +29,4 @@ from tabulate import tabulate
 produtos = [['Bala','0,30'], ['Suco','1,00'],['Salgado','3,00'], ['Sorvete','5,00'] ]
 tuplaprodutos = tuple(produtos)
 print(tabulate(tuplaprodutos, headers=["Produto", "Preço"]))
+
