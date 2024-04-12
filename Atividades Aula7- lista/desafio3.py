@@ -6,22 +6,40 @@
 
 # No final mostre a lista ordenada na tela
 
-lista = []
+# lista = []
 
-for c in range(0,5):
-    n = int(input("Digite um valor: "))
+# for c in range(0,5):
+#     n = int(input("Digite um valor: "))
     
-    if c ==0 or n > lista [-1]:
-        lista.append(n)
-        print("Adicione ao final da lista")
+#     if c ==0 or n > lista [-1]:
+#         lista.append(n)
+#         print("Adicione ao final da lista")
     
-    else:
-        pos = 0
-        while pos < len(lista):
-            if n <= lista[pos]:
-                lista.insert(pos,n)
-                print(f"Adicione na posição {pos} da lista")
-                break
-            pos += 1
+#     else:
+#         pos = 0
+#         while pos < len(lista):
+#             if n <= lista[pos]:
+#                 lista.insert(pos,n)
+#                 print(f"Adicione na posição {pos} da lista")
+#                 break
+#             pos += 1
 
-print(f"Os valores digitados em ordem foram {lista}")
+# print(f"Os valores digitados em ordem foram {lista}")
+
+
+lstValores = []
+lstValoresBkp = []
+lstOrdenada = []   
+
+  
+for i in range(5):
+    lstValores.append(int(input(f"Entre com o {i}º número inteiro: ")))
+    
+lstValoresBkp.extend(lstValores)
+
+for j in range(5):
+    vlrMenor = min(lstValores)
+    lstOrdenada.insert(j,vlrMenor)
+    lstValores.remove(vlrMenor)    
+
+print(f"A lista original é {lstValoresBkp} e a lista final é ficou {lstOrdenada}") 
