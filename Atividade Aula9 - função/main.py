@@ -8,3 +8,4 @@ def f_local():
 f_local()
 print(nome)
 
+print(nome)
