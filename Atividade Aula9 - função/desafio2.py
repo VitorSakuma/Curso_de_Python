@@ -16,10 +16,22 @@
 
 # -----------------------------------
 
+# def escreva(texto):
+#     print ("-" *20)
+#     print(texto)
+#     print ("-" *20)
+    
+# escreva("Olá, mundo!!!")
+    
+#Pedro
+
+texto = input("Digite um texto: ")
+
 def escreva(texto):
-    print ("-" *20)
+    tamanhoTexto = len(texto) 
+    
+    print ("-" *tamanhoTexto)
     print(texto)
-    print ("-" *20)
+    print ("-" *tamanhoTexto)
     
-escreva("Olá, mundo!!!")
-    
+escreva(texto)

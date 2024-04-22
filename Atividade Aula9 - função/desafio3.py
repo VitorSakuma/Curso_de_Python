@@ -1,13 +1,21 @@
 # DESAFIO 03
 
-# Faça um programa que tenha uma função chamada contador(), que
-# receba três parâmetros: início, fim e passo e realize a contagem.
+# Faça um programa que tenha uma função chamada maior(), que
+# receba três parâmetros com valores inteiros.
 
-# Seu programa tem que realizar três contagens através da função
-# criada:
+# Seu programa tem que analisar todos os valores e dizer qual deles é
+# o maior.
 
-# A) De 1 até 10, de 1 em 1
+n1 = int(input("Digite o primeiro valor: "))
+n2 = int(input("Digite o segundo valor: "))
+n3 = int(input("Digite o terceiro valor: "))
 
-# B) De 10 até 0, de 2 em 2
+def maior(numero1, numero2, numero3):
+    if numero1 > numero2 and numero1 > numero3:
+        return f"O numero {numero1}, foi o maior valor"
+    elif numero2 > numero3:
+        return f"O numero {numero2}, foi o maior valor"
+    else:
+        return f"O numero {numero3}, foi o maior valor"
 
-# C) Uma contagem personalizada
+print(maior(n1,n2,n3))

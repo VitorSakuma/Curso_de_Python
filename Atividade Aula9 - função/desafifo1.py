@@ -4,11 +4,13 @@
 # receba as dimensões de um terreno retangular (largura e
 # comprimento) e mostre a área do terreno.
 
+
+
 def calculaArea(largura, comprimento):
     area = largura * comprimento
-    print(area)
+    return area
     
-largura = int(input("Digite a largura: "))
-comprimento = int(input("Digite a comprimento: "))
+largura = int(input("Digite a largura do terreno: "))
+comprimento = int(input("Digite a comprimento do terreno: "))
 
-calculaArea(largura,comprimento)
+print(f"O terreno tem {calculaArea(largura,comprimento)} m²")
