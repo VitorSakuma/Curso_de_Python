@@ -16,10 +16,10 @@
 
 # -----------------------------------
 
-def escreva("Olá, mundo!!!"):
-    print
-    print(f"Olá, mundo!!!")
+def escreva(texto):
+    print ("-" *20)
+    print(texto)
+    print ("-" *20)
     
-    
-escreva()
+escreva("Olá, mundo!!!")
     
